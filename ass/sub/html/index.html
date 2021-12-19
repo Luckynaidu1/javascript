@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table class="table">
+        
+        <thead>
+            <th>id</th>
+            <th>first_name</th>
+            <th>last_name</th>
+            <th>email</th>
+            <th>gender</th>
+        </thead>
+        <tbody id="tdata" ></tbody>
+    </table>
+    </body>
+    <script>
+        let employee=[{ "id":1,"first_name":lucky,"last_name":shamballi, "email": shamballilak,"gender": male}]
+let tdata= document.getElementById("tdata");
+
+let row= employee.map((emp)=>{return   `<tr><td>${emp.id}</td>
+     <td>${emp.first_name}</td>
+     <td>${emp.last_name}</td>
+     <td>${emp.email}</td>
+     <td>${emp.gender}</td></tr>`});
+tdata.innerHTML +=row
+
+
+    </script>
+
+</html>

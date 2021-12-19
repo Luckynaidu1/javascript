@@ -1,0 +1,41 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <table border="2px solid">
+        <thead>
+            <th>id</th>
+            <th>first_nam</th>
+            <th>last_name</th>
+            <th>email</th>
+            <th>gender</th>
+
+        </thead>
+        <tbody id="dio"></tbody>
+    </table>
+    
+</body>
+<script>
+    let employee =[{"id":1,"first_name":"lucky","last_name":"shamballi","email":"shamballi","gender":"male"}]
+
+let dio=document.getElementById("dio");
+let row=""
+for(let i=0;i<=employee.length;i++){
+
+    let row=`<tr>
+        <td>${employee[i].id}</td>
+        <td>${employee[i].first_name}</td>
+        <td>${employee[i].last_name}</td>
+        <td>${employee[i].email}</td>
+        <td>${employee[i].gender}</td></tr>`
+      dio.innerHTML+=row;        
+    }
+
+</script>
+</html>

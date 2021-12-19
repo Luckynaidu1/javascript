@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="display()">
+    <h2>employe table date</h2>
+    <table border="1">
+    <thead>
+        <th>id</th>
+        <th>name</th>
+        <th>sal</th>
+    </thead>
+     <tbody id="abc"></tbody>
+    </table> 
+   </body>
+   <script>
+   let Employee =[
+       {id: 101,name: "lucky", sal:35000},
+       {id: 101,name: "lakshmi", sal:45000},
+       {id: 101,name: "don", sal:55000}
+   ];
+let createEmployee = (emp, callback) =>{
+    setTimeout(()=>{
+        let rows ="";
+        Employee.push(emp);
+        callback();
+    } ,3000);
+} ;
+
+   let getEmployee = () =>{
+       let rows ="";
+       Employee.forEach((emp) => {
+           
+       });((emp) => {
+           rows =
+             rows +
+            `<tr> <td>${emp.id}</td>
+            <tr> <td>${emp.name}</td>
+            <tr> <td>${emp.sal}</td> 
+            </tr>;`
+
+       });
+       document.getElementById("abc").innerHTML = rows;
+   }
+
+      </script>
+</html>

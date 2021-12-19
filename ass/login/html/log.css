@@ -1,0 +1,20 @@
+body{
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+.lucky{
+    position: absolute;
+    text-align: center;
+    color: coral;
+    width: 100px;
+    padding: 30px;
+    left: 40%;
+    right: 50%;
+}
+.input{
+    position: relative;
+    text-align: center;
+}

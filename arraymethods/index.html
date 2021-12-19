@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<table border="1">
+    <thead>
+        <th>id</th>
+        <th>name</th>
+        <th>sal</th>
+    </thead>
+</table>  
+</body>
+<script>
+    let Employee = [
+    {id:101, name: "lucky",sal: 45000},
+    {id:102, name: "pgr",sal: 55000},
+    {id:103, name: "don",sal: 65000}
+
+]
+function Employee(){
+    let rows =""+
+    Employee.map((Employee) =>{
+        rows =
+          rows +
+    `<tr><td>${Employee.id}</td>
+         <td>${Employee.name}</td>
+          <td>${Employee.sal}</td>
+      </tr>`;
+
+    });
+    document.getElementById("lucky").innerHTML=rows;
+}
+</script>
+</html>
