@@ -1,26 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body onload="table()">
-    <table border="2px">
-        <thead>
-            <th>id</th>
-            <th>first_name</th>
-            <th>email</th>
-            <th>gender</th>
-        <tbody id="dio"></tbody>
-
-        </thead>
-    </table>
-</body>
-<script>
-    let employes=[{"id":5,"first_name":"Alwin","email":"arosthorn4@msn.com","gender":"Genderqueer"},
+let don=[{"id":5,"first_name":"Alwin","email":"arosthorn4@msn.com","gender":"Genderqueer"},
 {"id":6,"first_name":"Haskel","email":"hlowrance5@si.edu","gender":"Bigender"},
 {"id":7,"first_name":"Lynsey","email":"lstack6@github.com","gender":"Non-binary"},
 {"id":8,"first_name":"Heindrick","email":"hhoudhury7@bluehost.com","gender":"Polygender"},
@@ -219,23 +197,16 @@
 {"id":197,"first_name":"Reagan","email":"rinnott5g@mac.com","gender":"Genderfluid"},
 {"id":198,"first_name":"Terza","email":"tpresho5h@parallels.com","gender":"Female"},
 {"id":199,"first_name":"Berti","email":"bshuttle5i@examiner.com","gender":"Female"},
-{"id":200,"first_name":"Fleurette","email":"fliquorish5j@ihg.com","gender":"Female"}];
-
+{"id":200,"first_name":"Fleurette","email":"fliquorish5j@ihg.com","gender":"Female"}]
 
 function table(){
     let rows="";
-    for(let i=0;i<=employes.length-1;i++){
-        rows=
-        rows+
-        `<tr>
-        <td>${employes[i].id}</td>
-        <td>${employes[i].first_name}</td>
-        <td>${employes[i].email}</td>
-        <td>${employes[i].gender}</td>
-        </tr>`;
-    }
-    document.getElementById("dio").innerHTML=rows;
-    
+    i=0;
+    while(i<=don.length-1){
+    i=i+1;
+    rows=
+    rows+
+    `<tr>
+
+    <tr>`
 }
-</script>
-</html>
