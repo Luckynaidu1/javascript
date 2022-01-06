@@ -1,4 +1,25 @@
-let don=[{"id":5,"first_name":"Alwin","email":"arosthorn4@msn.com","gender":"Genderqueer"},
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="table()">
+    <table border="2">
+        <thead>
+            <th>id</th>
+            <th>first_name</th>
+            <th>email</th>
+            <th>gender</th>
+<tbody id="tb1"></tbody>
+        </thead>
+    </table>
+</body>
+<script>
+let emp=[
+{"id":5,"first_name":"Alwin","email":"arosthorn4@msn.com","gender":"Genderqueer"},
 {"id":6,"first_name":"Haskel","email":"hlowrance5@si.edu","gender":"Bigender"},
 {"id":7,"first_name":"Lynsey","email":"lstack6@github.com","gender":"Non-binary"},
 {"id":8,"first_name":"Heindrick","email":"hhoudhury7@bluehost.com","gender":"Polygender"},
@@ -198,15 +219,19 @@ let don=[{"id":5,"first_name":"Alwin","email":"arosthorn4@msn.com","gender":"Gen
 {"id":198,"first_name":"Terza","email":"tpresho5h@parallels.com","gender":"Female"},
 {"id":199,"first_name":"Berti","email":"bshuttle5i@examiner.com","gender":"Female"},
 {"id":200,"first_name":"Fleurette","email":"fliquorish5j@ihg.com","gender":"Female"}]
-
 function table(){
-    let rows="";
-    i=0;
-    while(i<=don.length-1){
-    i=i+1;
-    rows=
-    rows+
-    `<tr>
+    rows="";
+    for(L of emp){
+        rows=rows+
+        `<tr>
+            <td>${L.id}<td>
+            <td>${L.first_name}<td>
+                <td>${L.email}<td>
+            <td>${L.gender}<td>
+                </tr>`
+    }
+    document.getElementById("tb1").innerHTML=rows;
+}
 
-    <tr>`
-
+</script>
+</html>
