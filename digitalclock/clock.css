@@ -1,0 +1,17 @@
+.time{
+    display: grid;
+    height: 5000%;
+    place-items: center;
+    height: 100px;
+    width: 360px;
+    background-color: violet;
+    margin: 0;
+    padding: 0;
+    font-family:'poppins',sans-serif;
+    position: absolute;
+    text-align: center;
+    position: absolute;
+    top: 270px;
+    left: 420px;
+}
+

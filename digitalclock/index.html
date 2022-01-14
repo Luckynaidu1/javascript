@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dcument</title>
+    <link href="./clock.css" rel="stylesheet">
+</head>
+<body>
+    <div class="time">
+    <div id="interval">12:00:00</div>
+    </div>
+<script>
+        function DigitalTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+  
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+  
+  
+            let currentTime = hour + ":" 
+                + min + ":" + sec + am_pm;
+  
+            document.getElementById("interval")
+                .innerHTML = currentTime;
+    setInterval(DigitalTime, 1000);
+
+        }
+  
+        DigitalTime();
+
+</script>
+</body>
+</html>
